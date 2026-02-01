@@ -1,0 +1,8 @@
+Metric,Paper (Multi),Our Model (Multi),Paper (Binary),Our Model (Binary)
+Accuracy (%),99.44,94.38,99.99,95.88
+Precision (%),99.08,95.12,99.99,95.88
+Recall (%),99.44,93.84,99.99,95.88
+F1-Score (%),99.26,93.59,99.99,95.76
+MCC,0.9872,0.8014,-,0.848
+Test Loss,0.0197,0.1774,0.0246,0.0922
+Inference Time (s/sample),0.000411,4e-06,0.000209,5e-06
