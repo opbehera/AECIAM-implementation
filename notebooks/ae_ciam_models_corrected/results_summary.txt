@@ -1,0 +1,31 @@
+AE-CIAM RESULTS SUMMARY
+======================
+
+Date: 2026-02-02
+Source file: results_comparison.csv (notebooks/ae_ciam_models_corrected)
+
+METRICS
+-------
+Metric                          | Paper (Multi) | Our Model (Multi) | Paper (Binary) | Our Model (Binary)
+-----------------------------------------------------------------------------------------------
+Accuracy (%)                    | 99.44          | 94.38              | 99.99          | 95.88
+Precision (%)                   | 99.08          | 95.12              | 99.99          | 95.88
+Recall (%)                      | 99.44          | 93.84              | 99.99          | 95.88
+F1-Score (%)                    | 99.26          | 93.59              | 99.99          | 95.76
+MCC                             | 0.9872         | 0.8014             | -              | 0.848
+Test Loss                       | 0.0197         | 0.1774             | 0.0246         | 0.0922
+Inference Time (s/sample)       | 0.000411       | 0.000004           | 0.000209       | 0.000005
+
+BRIEF NOTES
+-----------
+- Our implementation underperforms the paper's reported results for both multiclass and binary experiments (accuracy and F1-score notably lower).
+- MCC values indicate reasonably good but lower correlation compared with the paper for multiclass.
+- Inference time reported in the CSV is extremely small for our model and should be reviewed for measurement methodology.
+
+FILES
+-----
+- Source CSV: notebooks/ae_ciam_models_corrected/results_comparison.csv
+
+If you want, I can also:
+- Add this summary to the repo root or a different folder, or
+- Append a short analysis section comparing per-class performance and confusion matrix stats.
